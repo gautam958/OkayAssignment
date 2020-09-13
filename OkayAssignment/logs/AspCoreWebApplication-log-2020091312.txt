@@ -1,0 +1,498 @@
+2020-09-13 12:32:31.522 +08:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-13 12:32:31.908 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-13 12:32:31.909 +08:00 [INF] Hosting environment: Development
+2020-09-13 12:32:31.909 +08:00 [INF] Content root path: C:\Users\user\source\repos\OkayAssignment\OkayAssignment
+2020-09-13 12:32:31.947 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:32:32.192 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:32:32.220 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:32:32.234 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:32:32.359 +08:00 [INF] Executed ViewResult - view Index executed in 132.0426ms.
+2020-09-13 12:32:32.362 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 141.527ms
+2020-09-13 12:32:32.362 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:32:32.369 +08:00 [INF] Request finished in 425.7716ms 200 text/html; charset=utf-8
+2020-09-13 12:32:33.843 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:32:33.855 +08:00 [INF] Authorization was successful.
+2020-09-13 12:32:33.855 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:32:33.867 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:32:34.384 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:32:35.054 +08:00 [INF] Executed DbCommand (64ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:32:35.180 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:32:35.189 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:32:35.206 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:32:35.251 +08:00 [INF] Executed ViewResult - view Index executed in 44.9517ms.
+2020-09-13 12:32:35.252 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 1385.2035ms
+2020-09-13 12:32:35.253 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:32:35.259 +08:00 [INF] Request finished in 1416.2625ms 200 text/html; charset=utf-8
+2020-09-13 12:34:21.282 +08:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-13 12:34:21.562 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-13 12:34:21.568 +08:00 [INF] Hosting environment: Development
+2020-09-13 12:34:21.568 +08:00 [INF] Content root path: C:\Users\user\source\repos\OkayAssignment\OkayAssignment
+2020-09-13 12:34:21.610 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:34:22.320 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:34:22.882 +08:00 [INF] Executed DbCommand (56ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:34:23.005 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2020-09-13 12:34:23.022 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:34:23.042 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:34:23.051 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:34:23.177 +08:00 [INF] Executed ViewResult - view Index executed in 126.204ms.
+2020-09-13 12:34:23.178 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 134.9358ms
+2020-09-13 12:34:23.178 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:34:23.189 +08:00 [INF] Request finished in 1584.3644ms 200 text/html; charset=utf-8
+2020-09-13 12:34:24.608 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:34:24.619 +08:00 [INF] Authorization was successful.
+2020-09-13 12:34:24.619 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:34:24.624 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:34:24.628 +08:00 [INF] GET Index called.
+2020-09-13 12:34:24.651 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:34:24.656 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:34:24.671 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:34:24.678 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:34:24.695 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:34:24.739 +08:00 [INF] Executed ViewResult - view Index executed in 45.178ms.
+2020-09-13 12:34:24.741 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 117.2039ms
+2020-09-13 12:34:24.742 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:34:24.743 +08:00 [INF] Request finished in 135.2328ms 200 text/html; charset=utf-8
+2020-09-13 12:34:26.202 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Create  
+2020-09-13 12:34:26.213 +08:00 [INF] Authorization was successful.
+2020-09-13 12:34:26.213 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:34:26.215 +08:00 [INF] Route matched with {action = "Create", controller = "Property", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:34:26.216 +08:00 [INF] Executing ViewResult, running view Create.
+2020-09-13 12:34:26.257 +08:00 [INF] Executed ViewResult - view Create executed in 41.2328ms.
+2020-09-13 12:34:26.257 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Create (OkayAssignment) in 42.0016ms
+2020-09-13 12:34:26.257 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:34:26.258 +08:00 [INF] Request finished in 55.9685ms 200 text/html; charset=utf-8
+2020-09-13 12:43:50.649 +08:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-13 12:43:50.956 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-13 12:43:50.957 +08:00 [INF] Hosting environment: Development
+2020-09-13 12:43:50.957 +08:00 [INF] Content root path: C:\Users\user\source\repos\OkayAssignment\OkayAssignment
+2020-09-13 12:43:50.991 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:43:51.158 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:43:51.200 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:43:51.222 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:43:51.359 +08:00 [INF] Executed ViewResult - view Index executed in 149.8189ms.
+2020-09-13 12:43:51.362 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 161.9052ms
+2020-09-13 12:43:51.363 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:43:51.370 +08:00 [INF] Request finished in 383.1118ms 200 text/html; charset=utf-8
+2020-09-13 12:43:53.257 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:43:53.272 +08:00 [INF] Authorization was successful.
+2020-09-13 12:43:53.272 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:43:53.282 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:43:53.788 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:43:54.333 +08:00 [INF] Executed DbCommand (71ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:43:54.454 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:43:54.464 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:43:54.484 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:43:54.525 +08:00 [INF] Executed ViewResult - view Index executed in 41.833ms.
+2020-09-13 12:43:54.527 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 1244.7993ms
+2020-09-13 12:43:54.527 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:43:54.533 +08:00 [INF] Request finished in 1276.6168ms 200 text/html; charset=utf-8
+2020-09-13 12:43:56.602 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Create  
+2020-09-13 12:43:56.616 +08:00 [INF] Authorization was successful.
+2020-09-13 12:43:56.616 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:43:56.618 +08:00 [INF] Route matched with {action = "Create", controller = "Property", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:43:56.624 +08:00 [INF] Executing ViewResult, running view Create.
+2020-09-13 12:43:56.673 +08:00 [INF] Executed ViewResult - view Create executed in 50.2822ms.
+2020-09-13 12:43:56.673 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Create (OkayAssignment) in 54.8193ms
+2020-09-13 12:43:56.673 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:43:56.674 +08:00 [INF] Request finished in 72.4322ms 200 text/html; charset=utf-8
+2020-09-13 12:44:46.666 +08:00 [INF] Request starting HTTP/2.0 POST https://localhost:44342/Property/Create application/x-www-form-urlencoded 329
+2020-09-13 12:44:46.672 +08:00 [INF] Authorization was successful.
+2020-09-13 12:44:46.672 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:44:46.698 +08:00 [INF] Route matched with {action = "Create", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(OkayAssignment.Models.Property) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:44:46.742 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:44:46.752 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:44:46.755 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:44:46.882 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = Double), @p3='?' (Size = 4000), @p4='?' (DbType = Double), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Property] ([Bedroom], [IsAvaliable], [LeasePrice], [PropertyName], [SalePrice], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [PropertyId]
+FROM [Property]
+WHERE @@ROWCOUNT = 1 AND [PropertyId] = scope_identity();
+2020-09-13 12:44:46.931 +08:00 [INF] Executing RedirectResult, redirecting to /Property.
+2020-09-13 12:44:46.931 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Create (OkayAssignment) in 233.638ms
+2020-09-13 12:44:46.932 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:44:46.933 +08:00 [INF] Request finished in 272.4209ms 302 
+2020-09-13 12:44:46.940 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:44:46.944 +08:00 [INF] Authorization was successful.
+2020-09-13 12:44:46.944 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:44:46.945 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:44:46.945 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:44:46.948 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:44:46.953 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:44:46.954 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:44:46.955 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:44:46.973 +08:00 [INF] Executed ViewResult - view Index executed in 17.3887ms.
+2020-09-13 12:44:46.973 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 27.9024ms
+2020-09-13 12:44:46.973 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:44:46.973 +08:00 [INF] Request finished in 33.6458ms 200 text/html; charset=utf-8
+2020-09-13 12:46:54.179 +08:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-13 12:46:54.447 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-13 12:46:54.452 +08:00 [INF] Hosting environment: Development
+2020-09-13 12:46:54.452 +08:00 [INF] Content root path: C:\Users\user\source\repos\OkayAssignment\OkayAssignment
+2020-09-13 12:46:54.485 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:46:54.668 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:46:54.699 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:46:54.714 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:46:54.849 +08:00 [INF] Executed ViewResult - view Index executed in 142.8739ms.
+2020-09-13 12:46:54.851 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 152.4047ms
+2020-09-13 12:46:54.852 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:46:54.860 +08:00 [INF] Request finished in 378.1925ms 200 text/html; charset=utf-8
+2020-09-13 12:46:56.742 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:46:56.754 +08:00 [INF] Authorization was successful.
+2020-09-13 12:46:56.755 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:46:56.766 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:10.649 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:11.220 +08:00 [INF] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:47:38.365 +08:00 [INF] Executing RedirectResult, redirecting to /.
+2020-09-13 12:47:38.367 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 41600.4755ms
+2020-09-13 12:47:38.367 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:38.373 +08:00 [INF] Request finished in 41631.5499ms 302 
+2020-09-13 12:47:38.378 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:47:38.386 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:47:38.387 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:47:38.387 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:47:38.395 +08:00 [INF] Executed ViewResult - view Index executed in 7.7228ms.
+2020-09-13 12:47:38.396 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 9.0536ms
+2020-09-13 12:47:38.398 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:47:38.402 +08:00 [INF] Request finished in 24.7601ms 200 text/html; charset=utf-8
+2020-09-13 12:47:41.041 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:47:41.046 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:41.046 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:41.046 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:42.278 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:42.287 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:47:42.305 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:42.317 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:47:42.332 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:47:42.371 +08:00 [INF] Executed ViewResult - view Index executed in 39.5948ms.
+2020-09-13 12:47:42.371 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 1324.5811ms
+2020-09-13 12:47:42.371 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:42.372 +08:00 [INF] Request finished in 1330.5769ms 200 text/html; charset=utf-8
+2020-09-13 12:47:45.617 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Create  
+2020-09-13 12:47:45.621 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:45.621 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:47:45.623 +08:00 [INF] Route matched with {action = "Create", controller = "Property", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:45.625 +08:00 [INF] Executing ViewResult, running view Create.
+2020-09-13 12:47:45.664 +08:00 [INF] Executed ViewResult - view Create executed in 40.472ms.
+2020-09-13 12:47:45.665 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Create (OkayAssignment) in 41.8096ms
+2020-09-13 12:47:45.665 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Create (OkayAssignment)'
+2020-09-13 12:47:45.665 +08:00 [INF] Request finished in 50.3889ms 200 text/html; charset=utf-8
+2020-09-13 12:47:51.202 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:47:51.206 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:51.206 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:51.206 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:52.511 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:52.515 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:47:52.518 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:52.519 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:47:52.519 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:47:52.541 +08:00 [INF] Executed ViewResult - view Index executed in 21.4637ms.
+2020-09-13 12:47:52.541 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 1334.6745ms
+2020-09-13 12:47:52.541 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:52.541 +08:00 [INF] Request finished in 1339.9568ms 200 text/html; charset=utf-8
+2020-09-13 12:47:55.843 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Edit/2  
+2020-09-13 12:47:55.847 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:55.848 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:47:55.862 +08:00 [INF] Route matched with {action = "Edit", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:55.874 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:55.883 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+WHERE [p].[PropertyId] = @__p_0
+2020-09-13 12:47:55.887 +08:00 [INF] Executing ViewResult, running view Edit.
+2020-09-13 12:47:55.916 +08:00 [INF] Executed ViewResult - view Edit executed in 29.8842ms.
+2020-09-13 12:47:55.916 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment) in 53.8575ms
+2020-09-13 12:47:55.916 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:47:55.916 +08:00 [INF] Request finished in 73.7434ms 200 text/html; charset=utf-8
+2020-09-13 12:47:59.184 +08:00 [INF] Request starting HTTP/2.0 POST https://localhost:44342/Property/Edit/2 application/x-www-form-urlencoded 359
+2020-09-13 12:47:59.186 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:59.186 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:47:59.192 +08:00 [INF] Route matched with {action = "Edit", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, OkayAssignment.Models.Property) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:47:59.214 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:47:59.305 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = Double), @p3='?' (Size = 4000), @p4='?' (DbType = Double), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Property] SET [Bedroom] = @p0, [IsAvaliable] = @p1, [LeasePrice] = @p2, [PropertyName] = @p3, [SalePrice] = @p4, [UserId] = @p5
+WHERE [PropertyId] = @p6;
+SELECT @@ROWCOUNT;
+2020-09-13 12:47:59.338 +08:00 [INF] Executing RedirectResult, redirecting to /Property.
+2020-09-13 12:47:59.338 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment) in 146.197ms
+2020-09-13 12:47:59.338 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:47:59.339 +08:00 [INF] Request finished in 156.9834ms 302 
+2020-09-13 12:47:59.343 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:47:59.344 +08:00 [INF] Authorization was successful.
+2020-09-13 12:47:59.344 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:47:59.344 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:48:15.360 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:48:15.365 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:48:41.229 +08:00 [ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at OkayAssignment.Controllers.PropertyController.Index() in C:\Users\user\source\repos\OkayAssignment\OkayAssignment\Controllers\PropertyController.cs:line 44
+2020-09-13 12:48:43.365 +08:00 [INF] Executing RedirectResult, redirecting to /.
+2020-09-13 12:48:43.366 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 44021.3173ms
+2020-09-13 12:48:43.366 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:48:43.367 +08:00 [INF] Request finished in 44024.1288ms 302 
+2020-09-13 12:48:43.371 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:48:43.372 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:48:43.372 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:48:43.373 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:48:43.375 +08:00 [INF] Executed ViewResult - view Index executed in 1.8765ms.
+2020-09-13 12:48:43.375 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 2.078ms
+2020-09-13 12:48:43.375 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:48:43.375 +08:00 [INF] Request finished in 3.7113ms 200 text/html; charset=utf-8
+2020-09-13 12:49:26.783 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:49:26.788 +08:00 [INF] Authorization was successful.
+2020-09-13 12:49:26.788 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:49:26.789 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:49:28.370 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:28.381 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:49:29.050 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:29.053 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:49:29.057 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:49:29.087 +08:00 [INF] Executed ViewResult - view Index executed in 30.9861ms.
+2020-09-13 12:49:29.091 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 2302.4355ms
+2020-09-13 12:49:29.091 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:49:29.092 +08:00 [INF] Request finished in 2309.423ms 200 text/html; charset=utf-8
+2020-09-13 12:49:34.463 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Edit/4  
+2020-09-13 12:49:34.465 +08:00 [INF] Authorization was successful.
+2020-09-13 12:49:34.465 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:49:34.465 +08:00 [INF] Route matched with {action = "Edit", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:49:34.467 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:34.474 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+WHERE [p].[PropertyId] = @__p_0
+2020-09-13 12:49:34.476 +08:00 [INF] Executing ViewResult, running view Edit.
+2020-09-13 12:49:34.480 +08:00 [INF] Executed ViewResult - view Edit executed in 3.4894ms.
+2020-09-13 12:49:34.480 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment) in 14.3495ms
+2020-09-13 12:49:34.480 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:49:34.480 +08:00 [INF] Request finished in 17.3716ms 200 text/html; charset=utf-8
+2020-09-13 12:49:36.366 +08:00 [INF] Request starting HTTP/2.0 POST https://localhost:44342/Property/Edit/4 application/x-www-form-urlencoded 358
+2020-09-13 12:49:36.368 +08:00 [INF] Authorization was successful.
+2020-09-13 12:49:36.368 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:49:36.368 +08:00 [INF] Route matched with {action = "Edit", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, OkayAssignment.Models.Property) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:49:36.373 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:36.379 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = Double), @p3='?' (Size = 4000), @p4='?' (DbType = Double), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Property] SET [Bedroom] = @p0, [IsAvaliable] = @p1, [LeasePrice] = @p2, [PropertyName] = @p3, [SalePrice] = @p4, [UserId] = @p5
+WHERE [PropertyId] = @p6;
+SELECT @@ROWCOUNT;
+2020-09-13 12:49:36.381 +08:00 [INF] Executing RedirectResult, redirecting to /Property.
+2020-09-13 12:49:36.381 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment) in 12.2154ms
+2020-09-13 12:49:36.381 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Edit (OkayAssignment)'
+2020-09-13 12:49:36.382 +08:00 [INF] Request finished in 15.6353ms 302 
+2020-09-13 12:49:36.386 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:49:36.388 +08:00 [INF] Authorization was successful.
+2020-09-13 12:49:36.388 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:49:36.388 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:49:44.213 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:44.216 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:49:44.986 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:44.987 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:49:44.988 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:49:45.005 +08:00 [INF] Executed ViewResult - view Index executed in 17.5666ms.
+2020-09-13 12:49:45.006 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 8617.4677ms
+2020-09-13 12:49:45.006 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:49:45.006 +08:00 [INF] Request finished in 8620.1548ms 200 text/html; charset=utf-8
+2020-09-13 12:49:47.204 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Details/4  
+2020-09-13 12:49:47.206 +08:00 [INF] Authorization was successful.
+2020-09-13 12:49:47.206 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:49:47.210 +08:00 [INF] Route matched with {action = "Details", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:49:55.891 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:49:55.901 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+WHERE [p].[PropertyId] = @__id_0
+2020-09-13 12:50:11.675 +08:00 [INF] Executing ViewResult, running view Details.
+2020-09-13 12:50:14.068 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Details (OkayAssignment) in 26858.2847ms
+2020-09-13 12:50:14.068 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:50:14.071 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Property_Details.ExecuteAsync() in C:\Users\user\source\repos\OkayAssignment\OkayAssignment\Views\Property\Details.cshtml:line 44
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-13 12:50:14.108 +08:00 [INF] Request finished in 26904.3139ms 500 text/html; charset=utf-8
+2020-09-13 12:50:17.832 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:50:17.833 +08:00 [INF] Authorization was successful.
+2020-09-13 12:50:17.833 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:50:17.834 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:50:20.593 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:50:20.598 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:50:21.678 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:50:21.681 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:50:21.682 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:50:21.698 +08:00 [INF] Executed ViewResult - view Index executed in 16.1246ms.
+2020-09-13 12:50:21.699 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 3864.9707ms
+2020-09-13 12:50:21.699 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:50:21.702 +08:00 [INF] Request finished in 3869.8285ms 200 text/html; charset=utf-8
+2020-09-13 12:50:24.202 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Details/5  
+2020-09-13 12:50:24.204 +08:00 [INF] Authorization was successful.
+2020-09-13 12:50:24.204 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:50:24.205 +08:00 [INF] Route matched with {action = "Details", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:51:13.129 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:51:13.134 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+WHERE CAST(0 AS bit) = CAST(1 AS bit)
+2020-09-13 12:51:35.029 +08:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2020-09-13 12:51:35.029 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Details (OkayAssignment) in 70824.0526ms
+2020-09-13 12:51:35.029 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:51:35.033 +08:00 [INF] Request finished in 70830.75ms 404 
+2020-09-13 12:52:19.716 +08:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-13 12:52:20.036 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-13 12:52:20.036 +08:00 [INF] Hosting environment: Development
+2020-09-13 12:52:20.036 +08:00 [INF] Content root path: C:\Users\user\source\repos\OkayAssignment\OkayAssignment
+2020-09-13 12:52:20.085 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/  
+2020-09-13 12:52:20.273 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:52:20.301 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OkayAssignment.Controllers.HomeController (OkayAssignment).
+2020-09-13 12:52:20.316 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:52:20.438 +08:00 [INF] Executed ViewResult - view Index executed in 129.1451ms.
+2020-09-13 12:52:20.441 +08:00 [INF] Executed action OkayAssignment.Controllers.HomeController.Index (OkayAssignment) in 139.277ms
+2020-09-13 12:52:20.442 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.HomeController.Index (OkayAssignment)'
+2020-09-13 12:52:20.449 +08:00 [INF] Request finished in 369.6966ms 200 text/html; charset=utf-8
+2020-09-13 12:52:22.155 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property  
+2020-09-13 12:52:22.171 +08:00 [INF] Authorization was successful.
+2020-09-13 12:52:22.171 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:52:22.187 +08:00 [INF] Route matched with {action = "Index", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:52:26.768 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:52:27.352 +08:00 [INF] Executed DbCommand (73ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsAdmin], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2020-09-13 12:52:27.474 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:52:27.482 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+2020-09-13 12:52:27.506 +08:00 [INF] Executing ViewResult, running view Index.
+2020-09-13 12:52:27.566 +08:00 [INF] Executed ViewResult - view Index executed in 61.7549ms.
+2020-09-13 12:52:27.568 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Index (OkayAssignment) in 5381.5541ms
+2020-09-13 12:52:27.569 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Index (OkayAssignment)'
+2020-09-13 12:52:27.576 +08:00 [INF] Request finished in 5421.4025ms 200 text/html; charset=utf-8
+2020-09-13 12:52:29.236 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44342/Property/Details/4  
+2020-09-13 12:52:29.248 +08:00 [INF] Authorization was successful.
+2020-09-13 12:52:29.248 +08:00 [INF] Executing endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:52:29.258 +08:00 [INF] Route matched with {action = "Details", controller = "Property", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller OkayAssignment.Controllers.PropertyController (OkayAssignment).
+2020-09-13 12:52:39.945 +08:00 [INF] Entity Framework Core 3.1.8 initialized 'AppDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-13 12:52:39.960 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PropertyId], [p].[Bedroom], [p].[IsAvaliable], [p].[LeasePrice], [p].[PropertyName], [p].[SalePrice], [p].[UserId]
+FROM [Property] AS [p]
+WHERE CAST(0 AS bit) = CAST(1 AS bit)
+2020-09-13 12:52:46.037 +08:00 [INF] Executing ViewResult, running view Details.
+2020-09-13 12:52:46.052 +08:00 [INF] Executed action OkayAssignment.Controllers.PropertyController.Details (OkayAssignment) in 16793.9114ms
+2020-09-13 12:52:46.053 +08:00 [INF] Executed endpoint 'OkayAssignment.Controllers.PropertyController.Details (OkayAssignment)'
+2020-09-13 12:52:46.055 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'OkayAssignment.Models.ErrorViewModel', but this ViewDataDictionary instance requires a model item of type 'OkayAssignment.Models.Property'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-09-13 12:52:46.153 +08:00 [INF] Request finished in 16917.1422ms 500 text/html; charset=utf-8

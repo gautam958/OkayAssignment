@@ -1,0 +1,75 @@
+﻿@model IEnumerable<OkayAssignment.Models.Property>
+
+@{
+    ViewData["Title"] = "Index";
+}
+ 
+<p>
+    <a asp-action="Create">New Property</a>
+</p>
+<table class="table table-sm table-striped table-hover border-bottom">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bedroom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAvaliable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeasePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PropertyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bedroom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsAvaliable)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SalePrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LeasePrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.PropertyId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.PropertyId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.PropertyId">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center">
+                    No Property Record(s) found.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

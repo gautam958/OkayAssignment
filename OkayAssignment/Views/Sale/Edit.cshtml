@@ -1,0 +1,45 @@
+﻿@model OkayAssignment.ViewModel.TransactionVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+ 
+
+<h4>Update Sale</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@Model.transaction.TransactionId" />
+            <div class="form-group">
+                <label asp-for="@Model.transaction.PropertyId" class="control-label"></label>
+                <select asp-for="@Model.transaction.PropertyId" class="dropdown-header"
+                        asp-items="@(new SelectList(ViewBag.ListofavailableProduct,"PropertyId","PropertyName"))">
+                </select>
+                <span asp-validation-for="@Model.transaction.PropertyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.transaction.UserId" class="control-label"></label>
+                <input asp-for="@Model.transaction.UserId" class="form-control" readonly="readonly" />
+                <span asp-validation-for="@Model.transaction.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.transaction.TransactionDate" class="control-label"></label>
+                <input asp-for="@Model.transaction.TransactionDate" class="form-control" />
+                <span asp-validation-for="@Model.transaction.TransactionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
